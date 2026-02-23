@@ -11,10 +11,10 @@ export default function FooterTimeline() {
     ];
 
     return (
-        <footer className="fixed bottom-0 left-0 w-full z-10 px-8 pb-8 flex justify-center items-end hidden md:flex pointer-events-none">
-            <div className="flex items-center gap-12 font-medium text-[11px] uppercase tracking-widest pointer-events-auto">
-                <div className="absolute bottom-[4.5rem] left-0 right-0 h-[1px] bg-black/5" />
-                {timelineData.map((item, index) => (
+        <footer className="fixed bottom-0 left-0 w-full z-10 px-8 pb-6 hidden md:flex justify-center items-end pointer-events-none">
+            <div className="flex items-center gap-12 font-medium text-[11px] uppercase tracking-widest pointer-events-auto relative">
+                <div className="absolute -top-2 left-0 right-0 h-[1px] bg-black/10" />
+                {timelineData.map((item) => (
                     <button
                         key={`${item.year}-${item.season}`}
                         className={`flex flex-col text-left transition-colors relative pt-4 hover:text-black
